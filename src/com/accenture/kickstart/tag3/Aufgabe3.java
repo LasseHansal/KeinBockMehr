@@ -2,7 +2,13 @@ package com.accenture.kickstart.tag3;
 
 public class Aufgabe3 {
     static void main() {
+        Plant p1 = new Plant("Eiche", 3.5F, false);
+        Plant p2 = new Plant("Sonnenblume", 1F, false);
+        Plant p3 = new Plant("Roter Fingerhut", 0.1F, true);
 
+        System.out.println(p1.displayAttributes());
+        System.out.println(p2.displayAttributes());;
+        System.out.println(p3.displayAttributes());
     }
 }
 
@@ -17,10 +23,10 @@ class Plant{
         this.isToxic = isToxic;
     }
 
-    public void setAttributes(String newname, float newsize, boolean newisToxic) {
-        this.name = newname;
-        this.size = newsize;
-        this.isToxic = newisToxic;
+    private void setAttributes(String name, float size, boolean isToxic) {
+        this.name = name;
+        this.size = size;
+        this.isToxic = isToxic;
     }
 
     public String displayAttributes() {

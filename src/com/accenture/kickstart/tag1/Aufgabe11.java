@@ -1,6 +1,5 @@
 package com.accenture.kickstart.tag1;
 
-
 public class Aufgabe11 {
     void main() {
         Point p1 = new Point(123,135);
