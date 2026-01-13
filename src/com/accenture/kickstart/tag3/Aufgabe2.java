@@ -22,7 +22,6 @@ public class Aufgabe2 {
                 System.out.println(answer + " is an invalid input");
             }
         }
-        System.out.println("test");
     }
 }
 
@@ -41,8 +40,8 @@ class Calculator2 {
         System.out.print("Number of years: ");
         this.numberOfYears = sc.nextInt();
 
-        double result = this.startingCapital * Math.pow(1 + this.percentage, this.numberOfYears);
+        double result = this.startingCapital * Math.pow(1 + this.percentage/100, this.numberOfYears);
 
-        System.out.printf("Ending capital: %.2f%n", result);
+        System.out.println("Ending capital: " + result);
     }
 }
