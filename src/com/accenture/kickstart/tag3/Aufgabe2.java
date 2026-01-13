@@ -22,6 +22,7 @@ public class Aufgabe2 {
                 System.out.println(answer + " is an invalid input");
             }
         }
+        System.out.println("test");
     }
 }
 
