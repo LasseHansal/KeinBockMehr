@@ -28,13 +28,9 @@ class Person{
     public String toString(){
         if(this.age >= 18){
             if(gender== true){
-                return(
-                        "Hallo Herr " + this.lastname + "! für Männer ab 18 Jahre"
-                );
+                return("Hallo Herr " + this.lastname + "! für Männer ab 18 Jahre");
             }else{
-                return(
-                        "Hallo Frau " + this.lastname + "! für Frauen ab 18 Jahre"
-                );
+                return("Hallo Frau " + this.lastname + "! für Frauen ab 18 Jahre");
             }
         }else{
             return("Hallo "+ this.firstname+ " für alle Jugendlichen und Kinder");
